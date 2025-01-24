@@ -73,7 +73,11 @@ class MainActivity : ComponentActivity() {
             }
 
             // Mostrar el diàleg de permisos quan sigui necessari
-            permissionManager.ShowPermissionDialog(title = getString(R.string.permissionRequired),confirm=getString(R.string.ok),cancel=getString(R.string.cancel))
+            permissionManager.ShowPermissionDialog(
+                title = getString(R.string.permissionRequired),
+                confirm = getString(R.string.ok),
+                cancel = getString(R.string.cancel)
+            )
         }
     }
 
