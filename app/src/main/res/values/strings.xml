@@ -46,4 +46,16 @@
     <string name="locationPermissionGranted">You gave access to your location. Thanks!</string>
     <string name="locationPermissionPermanentDenied">You permanently denied access to your location, please enable this permission in your settings to enjoy this app.</string>
     <string name="locationPermissionReady">Location ready</string>
+    <string name="smsPermissionInfo">SMS Access</string>
+    <string name="smsPermissionNeeded">We need permission to send SMS messages</string>
+    <string name="smsPermissionDenied">You denied SMS permission, please enable this permission in your settings to enjoy this app.</string>
+    <string name="smsPermissionGranted">You gave access to send SMS. Thanks!</string>
+    <string name="smsPermissionPermanentDenied">You permanently denied SMS permission, please enable this permission in your settings to enjoy this app.</string>
+    <string name="smsPermissionReady">SMS permission ready</string>
+    <string name="callPermissionInfo">Call Access</string>
+    <string name="callPermissionNeeded">We need permission to make calls</string>
+    <string name="callPermissionDenied">You denied call permission, please enable this permission in your settings to enjoy this app.</string>
+    <string name="callPermissionGranted">You gave access to call. Thanks!</string>
+    <string name="callPermissionPermanentDenied">You permanently denied Call permission, please enable this permission in your settings to enjoy this app.</string>
+    <string name="callPermissionReady">Call permission ready</string>
 </resources>
