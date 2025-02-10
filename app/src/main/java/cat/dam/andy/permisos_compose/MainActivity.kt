@@ -17,7 +17,8 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import cat.dam.andy.permisos_compose.permission.PermissionManager
+import cat.dam.andy.permisos_compose.permissions.PermissionData
+import cat.dam.andy.permisos_compose.permissions.PermissionManager
 
 class MainActivity : ComponentActivity() {
 
@@ -30,7 +31,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             MaterialTheme {
-                PermissionDemoUI(permissionManager)
+                PermissionDemoUI()
             }
         }
     }
@@ -54,7 +55,7 @@ class MainActivity : ComponentActivity() {
     }
 
     @Composable
-    fun PermissionDemoUI(permissionManager: PermissionManager) {
+    fun PermissionDemoUI() {
         val permissions = permissionManager.permissionsState.collectAsState().value
 
         Column(
@@ -84,7 +85,7 @@ class MainActivity : ComponentActivity() {
 
     @Composable
     fun PermissionButton(
-        permissionData: PermissionManager.PermissionData,
+        permissionData: PermissionData,
         onPermissionRequest: () -> Unit
     ) {
         Button(onClick = onPermissionRequest) {

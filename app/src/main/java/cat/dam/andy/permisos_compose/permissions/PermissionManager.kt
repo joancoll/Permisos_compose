@@ -1,4 +1,4 @@
-package cat.dam.andy.permisos_compose.permission
+package cat.dam.andy.permisos_compose.permissions
 
 import android.content.Intent
 import android.content.pm.PackageManager
@@ -16,14 +16,6 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
 class PermissionManager(private val activity: ComponentActivity) {
-
-    data class PermissionData(
-        val permission: String,
-        val permissionInfo: String,
-        val grantedMessage: String,
-        val deniedMessage: String,
-        val permanentDeniedMessage: String
-    )
 
     private val _permissionsState = MutableStateFlow<List<PermissionData>>(emptyList())
     val permissionsState: StateFlow<List<PermissionData>> = _permissionsState
