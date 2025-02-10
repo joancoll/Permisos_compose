@@ -1,4 +1,4 @@
-package cat.dam.andy.permisos_compose
+package cat.dam.andy.permisos_compose.permission
 
 import android.content.Intent
 import android.content.pm.PackageManager
